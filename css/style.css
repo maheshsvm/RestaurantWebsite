@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Kanit&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* font-family: 'Bruno Ace SC', cursive; */
+    font-family: 'Kanit', sans-serif;
+}
+
+.nav_item{
+    /* visibility: hidden; */
+    display: none;
+    background-color: #149f39;
+    display: inline-block;
+    padding: 7px;
+    color: white;
+}
+.navbar{
+    /* for making sticky navbar */
+    position : sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    height : 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.bar_icon{
+    height: 40%;
+    width: 50px;
+    font-size: 7px;
+}
+.bar_icon div{
+    display: inline-block;
+    width: 50%;
+    height: 8%;
+    background-color: black;
+}
+
+.main{
+    min-height: 100vh;
+    width: 70vw;
+    margin: auto;
+}
+
+.hero{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    align-items: center;
+}
+
+.hero_img{
+    margin: 0 50px;
+}
+
+.hero_img img{
+    width: 400px;
+}
+
+.discount_tag{
+    display: inline-block;
+    padding: 3px 7px;
+    margin-bottom: 10px;
+    background-color: #149f39;
+    color: white;
+}
+
+.hero_desc h1{
+    font-size: 2.2rem;
+    margin: 15px 0;
+}
+
+.explore_btn{
+    border: none;
+    background-color: #ffc066;
+    padding: 7px 8px;
+    margin: 16px 0px;
+    font-size: 0.8rem;
+    transition: 0.4s ease-in-out;
+}
+
+.explore_btn:hover{
+    cursor: pointer;
+    opacity: 0.8;
+    transition: 0.4s ease-in-out;
+}
+
+.services{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.service_card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    font-size: 0.7rem;
+    padding-right: 10px;
+}
+
+.service_card:hover{
+    transform : scale(1.03);
+    transition: 0.3s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+
+
+.card_img img{
+    margin-right: 15px;
+}
+
+.main hr{
+    margin-top: 20px;
+    width: 80%;
+    color: red;
+    border-color: springgreen;
+}
+
+.menu{
+    text-align: center;
+    margin: 30px 0;
+}
+
+.menu p{
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #149f39;
+    color: white;
+    margin: 10px 0;
+}
+
+.menu h2{
+    margin: 10px 0;
+}
+/* desigining menu  */
+.menu_items{
+    display: grid;
+    grid-template-areas:
+    'img1 img1 img2 img3'
+    'img1 img1 img2 img7'
+    'img4 img5 img6 img7';
+    gap: 8px;
+}
+
+.menu_item img{
+    border-radius: 10px;
+    transition: 0.2s ease-in-out;
+    width: 100%;
+    height: 100%;
+
+}
+.menu_item img:hover{
+    transform: scale(0.98);
+    transition: 0.2s ease-in-out;
+}
+#img1{
+    grid-area: img1;
+}
+#img2{
+    grid-area: img2;
+}
+#img3{
+    grid-area: img3;
+}
+#img4{
+    grid-area: img4;
+}
+#img5{
+    grid-area: img5;
+}
+#img6{
+    grid-area: img6;
+}
+#img7{
+    grid-area: img7;
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: #fff0db;
+    padding: 10px 0;
+}
+.social_images{
+    margin-top: 6px;
+    display: flex;
+}
+.social_images img{
+    cursor: pointer;
+    width: 40px;
+    margin: 0 5px;
+}
