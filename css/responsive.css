@@ -34,6 +34,9 @@
     margin: 15px 0;
 }
 
+.menu_item img:hover:hover{
+    transform: scale(1.03);
+}
 footer{
     text-align: center;
     flex-direction: column;
